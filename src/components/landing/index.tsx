@@ -5,6 +5,7 @@ import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/all'
 import Image from 'next/image'
 import { useEffect, useRef } from 'react'
+import Header from '../header'
 
 export default function Landing(): JSX.Element {
 
@@ -54,6 +55,7 @@ export default function Landing(): JSX.Element {
 
   return (
     <main className='relative flex h-screen mb-[100vh] overflow-hidden'>
+      <Header />
       <Image
         src='/images/upscale.png'
         alt='profile'
